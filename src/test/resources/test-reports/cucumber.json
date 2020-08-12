@@ -1,0 +1,186 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Get Podium tests details",
+        "description": "",
+        "id": "podium-test;get-podium-tests-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9758658500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I retrieve podium test details https://podium-slns-interview.getsandbox.com/products",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://podium-slns-interview.getsandbox.com/products",
+                  "offset": 31
+                }
+              ],
+              "location": "PodiumSteps.getpodiumTestDetails(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1663958100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should successfully be able to view the retrieved podium test details",
+            "match": {
+              "location": "PodiumSteps.verifyPodiumTestDetails(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "data.id",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "data.name",
+                  "5 yr fixed"
+                ]
+              },
+              {
+                "cells": [
+                  "data.lender.name",
+                  "Lender A"
+                ]
+              },
+              {
+                "cells": [
+                  "data.lender.logo",
+                  "https://via.placeholder.com/80x55"
+                ]
+              },
+              {
+                "cells": [
+                  "data.monthlyRepayment",
+                  "567"
+                ]
+              },
+              {
+                "cells": [
+                  "data.interestRate",
+                  "4.3"
+                ]
+              },
+              {
+                "cells": [
+                  "data.minAge",
+                  "18"
+                ]
+              },
+              {
+                "cells": [
+                  "data.maxAge",
+                  "70"
+                ]
+              },
+              {
+                "cells": [
+                  "data.loanToValue",
+                  "0.8"
+                ]
+              },
+              {
+                "cells": [
+                  "data.type",
+                  "fixed"
+                ]
+              },
+              {
+                "cells": [
+                  "data.initialTerm",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserJourney:get_adjustable_summary_calculation_by_id"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "submit mortgage applicant details",
+        "description": "",
+        "id": "podium-test;submit-mortgage-applicant-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25609700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am a new mortgage applicant",
+            "match": {
+              "location": "PodiumSteps.newMortgageApplicant()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 590063700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I submit my mortgage application",
+            "match": {
+              "location": "PodiumSteps.submitMortgageApplication()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2462800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should be able  to successfully submit my mortgage application",
+            "match": {
+              "location": "PodiumSteps.verifySubmissionOfMortgageApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserJourney:get_adjustable_summary_calculation_by_id"
+          }
+        ]
+      }
+    ],
+    "name": "Podium Test",
+    "description": "  As a user\n  I want to\n  submit and retrieve the podium test details",
+    "id": "podium-test",
+    "keyword": "Feature",
+    "uri": "src/test/resources/GetPodium.feature",
+    "tags": [
+      {
+        "name": "@UserJourney:get_adjustable_summary_calculation_by_id",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

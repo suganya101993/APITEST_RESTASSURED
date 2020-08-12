@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.08826">
+<testcase classname="Podium Test" name="Get Podium tests details" time="12.450012">
+<system-out><![CDATA[When I retrieve podium test details https://podium-slns-interview.getsandbox.com/products.passed
+Then I should successfully be able to view the retrieved podium test details.passed
+]]></system-out>
+</testcase>
+<testcase classname="Podium Test" name="submit mortgage applicant details" time="0.638248">
+<system-out><![CDATA[Given I am a new mortgage applicant.........................................passed
+When I submit my mortgage application.......................................passed
+Then I should be able  to successfully submit my mortgage application.......passed
+]]></system-out>
+</testcase>
+</testsuite>
