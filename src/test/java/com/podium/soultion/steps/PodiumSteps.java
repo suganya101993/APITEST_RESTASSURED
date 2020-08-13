@@ -58,7 +58,7 @@ public class PodiumSteps {
         response = request.when().post("https://podium-slns-interview.getsandbox.com/products/" + podiumTest.productId + "/applications");
     }
 
-    @Then("I should be able  to successfully submit my mortgage application")
+    @Then("I should be able to successfully submit my mortgage application")
     public void verifySubmissionOfMortgageApplication() {
         json = response.then().assertThat().statusCode(201).log().ifValidationFails().log().ifError();
     }

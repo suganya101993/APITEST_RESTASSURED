@@ -23,5 +23,5 @@ Feature:Podium Test
   Scenario:submit mortgage applicant details
     Given I am a new mortgage applicant
     When I submit my mortgage application
-    Then I should be able  to successfully submit my mortgage application
+    Then I should be able to successfully submit my mortgage application
 #    returning 400 as product iD in the URI is invalid(need valid product id)
