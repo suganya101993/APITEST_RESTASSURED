@@ -1,4 +1,4 @@
-# QA Automated test for API using Java with Cucumber and Selenium WebDriver #
+# QA Automated API test using Java with Cucumber and Selenium WebDriver #
 
 This project have QA assessment test. Done the set up for the automated test using java language with Selenium and Cucumber.
 
